@@ -1,1 +1,30 @@
-/*Schrijf hier jouw eigen CSS!*/
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.all-pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 2rem;
+    /*border: solid 2px cornflowerblue;*/
+}
+
+
+
+.error-message{
+    color: red;
+}
+
+h1 {
+    font-size: 75px;
+    color: #F2BD00;
+    -webkit-text-stroke: 4px #0062B8;
+    text-shadow: 5px 5px 10px grey;
+}

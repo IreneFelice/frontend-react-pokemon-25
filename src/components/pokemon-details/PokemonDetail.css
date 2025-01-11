@@ -1,0 +1,14 @@
+.single-pokemon-container{
+    display: flex;
+    flex-basis: 10rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.single-pokemon-container li{
+    background-color: lightgrey;
+}
