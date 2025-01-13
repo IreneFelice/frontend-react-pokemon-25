@@ -37,16 +37,26 @@ function PokemonDetails({name}) {
 
 
     return (
-        <div className="single-pokemon-container">
+        <section className="single-pokemon-container">
             <h3>{namePretty}</h3>
 
+            <div>
+                <img
+                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`}
+                    alt={pokemonData.name}/>
+            </div>
 
-            <p>Abilities:</p>
+                <p className="bold">Moves: <span className="normal">{pokemonData.moves ? pokemonData.moves.length : 'Loading...'}</span></p>
+                <p className="bold">Weigth: <span className="normal">{pokemonData.weight}</span></p>
+
+           <div className="abilities-container">
+            <p className="bold">Abilities:</p>
             <ul> {pokemonData.abilities && pokemonData.abilities.map((abilityObj, index) => (
                 <li key={index}>{abilityObj.ability.name}</li>
             ))}
             </ul>
         </div>
+        </section>
     )
 }
 
