@@ -1,0 +1,30 @@
+.single-pokemon-container{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 15rem;
+    min-height: 26rem;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    margin: 10px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.single-pokemon-container li{
+    background-color: lightgrey;
+
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.normal{
+   font-weight: normal;
+}
+
+.abilities-container{
+    min-height: 100%;
+}
